@@ -71,4 +71,7 @@ HW12: ResNet18 구현
 <img width="333" alt="hw12결과 layer" src="https://user-images.githubusercontent.com/44044119/209361280-3c441d79-8aa6-437d-ba93-64051028273a.PNG">
 <img width="173" alt="hw12결과" src="https://user-images.githubusercontent.com/44044119/209361320-f04083b6-888e-4bb8-8830-01868a9d09f5.PNG">
 
+HW13: FCN 16s 구현
 
+설명
+- 실습 코드를 그대로 실행하여 Skip Connection을 적용한 Unet과 적용하지 않은 Unet을 비교
