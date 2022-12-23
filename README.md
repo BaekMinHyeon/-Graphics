@@ -38,3 +38,22 @@ RANSAC을 이용한 affine transform
 - 3가지 단계를 m번 반복하여 가장 많은 inlier를 가지고 있는 affine matrix를 채택함
 
 <img width="341" alt="hw9결과" src="https://user-images.githubusercontent.com/44044119/209359511-ac7ff4a4-7ef1-49d8-b0ec-f2cc95ab6281.PNG">
+
+HW10: Brute-Force Descriptor Matcher와 Gaussian Backward
+
+Brute-Force Matching 과정
+1. 원본 이미지과 목표 이미지에서의 특징점(Keypoints)과 특징기술자(Descriptors)를 각각 구한다.
+2. 원본 이미지에서의 특징 기술자의 집합을 𝐷1 ∈ ℝ𝑁1 × 𝐶, 목표 이미지에서의 특징 기술자의 집합을 𝐷2 ∈ ℝ𝑁2 × 𝐶
+(𝑁1: 원본 이미지에서의 Keypoint 개수, 𝑁2: 목표 이미지에서의 Keypoint 개수, 𝐶 : 특징 기술자의 차원)이라고 하자.
+3. 원본 이미지의 각 특징점에 대한 특징 기술자와 목표 이미지에서의 모든 특징 기술자와의 𝐿2 𝐷𝑖𝑠𝑡𝑎𝑛𝑐𝑒를 구한다.
+4. 그 거리 값이 최솟값일 때의 특징점들을 매칭한다.
+
+Gaussian backward 구현
+- 역행렬을 사용하여 얻은 원본 이미지의 좌표에서 bilinear interpolation을 수행하기 전에 주변 이웃 픽셀 값도 같이 고려(이미지 필터링)
+- 이때 filter로 gaussian filter를 사용
+- 변환된 좌표의 주변 픽셀도 bilinear interpolation 수행 후 각 위치에 있는 filter 값을 곱해서 모두 더함
+
+<img width="344" alt="hw10결과_1" src="https://user-images.githubusercontent.com/44044119/209360470-16edeafd-a39e-4bec-a9f8-500679db9bb1.PNG">
+<img width="333" alt="hw10결과_2" src="https://user-images.githubusercontent.com/44044119/209360506-ca4e1ffa-4646-4057-b122-a721e5dbdbdc.PNG">
+
+
