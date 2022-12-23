@@ -32,7 +32,7 @@ HW9: RANSAC
 RANSAC을 이용한 affine transform
 - 랜덤하게 n개의 point를 결정한다.
 - Point를 이용하여 affine matrix를 구하기
-*실습에는 모든 point를 사용하여 affine matrix를 구함
+* 실습에는 모든 point를 사용하여 affine matrix를 구함
 - 현재 얻은 affine matrix의 inlier의 수를 구하기
 * Inlier의 개수를 고르기 위해서 L2 distance 사용
 - 3가지 단계를 m번 반복하여 가장 많은 inlier를 가지고 있는 affine matrix를 채택함
