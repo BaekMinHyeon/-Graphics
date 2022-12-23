@@ -56,4 +56,19 @@ Gaussian backward 구현
 <img width="344" alt="hw10결과_1" src="https://user-images.githubusercontent.com/44044119/209360470-16edeafd-a39e-4bec-a9f8-500679db9bb1.PNG">
 <img width="333" alt="hw10결과_2" src="https://user-images.githubusercontent.com/44044119/209360506-ca4e1ffa-4646-4057-b122-a721e5dbdbdc.PNG">
 
+HW11: Convolution 계층을 활용한 CIFAR-10 데이터셋 학습
+
+설명
+- 본 과제에서 계층을 자유롭게 쌓아도 무방
+- Test Dataset에 대해 정확도는 50퍼 이상 달성하면 됨
+- 직접 모델을 설계하여 학습 진행 및 모델 결과를 도출하는 것이 과제의 주목적
+
+HW12: ResNet18 구현
+
+설명
+- Test Dataset에 대해 정확도는 70퍼 이상 달성하면 됨
+
+<img width="333" alt="hw12결과 layer" src="https://user-images.githubusercontent.com/44044119/209361280-3c441d79-8aa6-437d-ba93-64051028273a.PNG">
+<img width="173" alt="hw12결과" src="https://user-images.githubusercontent.com/44044119/209361320-f04083b6-888e-4bb8-8830-01868a9d09f5.PNG">
+
 
